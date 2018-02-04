@@ -2,10 +2,10 @@
 用来测试 socket选项SO_REUSEADDR和SO_REUSEPORT在不同平台的表现
 
 ## 编译方法
-1. 切换到当前目录，cd socket_reuse_test
-2. 新建并切换build目录， mkdir build && cd build
+1. cd socket_reuse_test
+2. mkdir build && cd build
 3. cmake ..
-4. make 或者cmake --build .
+4. cmake --build .
 
 ## 测试方法
 1. udp_server -port 1234 -reuseraddr -reuserport -thread 2
