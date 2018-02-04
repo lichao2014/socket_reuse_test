@@ -9,26 +9,26 @@
 
 ## 测试方法
 1. udp_server -port 1234 -reuseraddr -reuserport -thread 2
--port 本地端口
--reuseaddr 设置SO_REUSEADDR，默认不设置
--reuseaport 设置SO_REUSEPORT，默认不设置
--thread server及线程个数
+* -port 本地端口
+* -reuseaddr 设置SO_REUSEADDR，默认不设置
+* -reuseaport 设置SO_REUSEPORT，默认不设置
+* -thread server及线程个数
 
 2. udp_client -port 1235 -dstport 1234 -reuseraddr -reuserport -msg 123
--port 本地端口
--dstport 远端端口
--reuseaddr 设置SO_REUSEADDR，默认不设置
--reuseaport 设置SO_REUSEPORT，默认不设置
--msg 测试消息内容
+* -port 本地端口
+* -dstport 远端端口
+* -reuseaddr 设置SO_REUSEADDR，默认不设置
+* -reuseaport 设置SO_REUSEPORT，默认不设置
+* -msg 测试消息内容
 
 3. tcp_server -port 1234 -reuseraddr -reuserport
--port 本地端口
--reuseaddr 设置SO_REUSEADDR，默认不设置
--reuseaport 设置SO_REUSEPORT，默认不设置
+* -port 本地端口
+* -reuseaddr 设置SO_REUSEADDR，默认不设置
+* -reuseaport 设置SO_REUSEPORT，默认不设置
 
 4. tcp_client -port 1235 -dstport 1234 -reuseraddr -reuserport -msg 123
--port 本地端口
--dstport 远端端口
--reuseaddr 设置SO_REUSEADDR，默认不设置
--reuseaport 设置SO_REUSEPORT，默认不设置
--msg 测试消息内容
+* -port 本地端口
+* -dstport 远端端口
+* -reuseaddr 设置SO_REUSEADDR，默认不设置
+* -reuseaport 设置SO_REUSEPORT，默认不设置
+* -msg 测试消息内容
